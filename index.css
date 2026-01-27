@@ -1,0 +1,845 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family:sans-serif,Arial, Helvetica;
+}
+
+/* -=--------------overall container------------------------- */
+
+/* -------------------------nav bar--------------------- */
+nav{
+    height:100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px
+}
+
+.logo img{
+    height:150px;
+    width:150px
+}
+
+
+.tags{
+    /* width:50%; */
+    /* background-color: darkgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color:white;
+    transition: all 1s;
+    gap:20px;
+    padding: 10px;
+}
+
+nav button{
+    background-color: bisque;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+nav input:checked~.tags{
+        left:6%
+    }    
+
+.fa-bars{
+    display: none;
+    color:white
+}
+
+nav input{
+    display: none;
+}
+
+/* ------------------home--------------------------- */
+.home{
+    min-height:100vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.back{
+    object-fit: cover;
+    height:100vh;
+    position: absolute;
+    filter: brightness(50%);
+    width: 100%;
+    z-index: -1
+}
+
+/* -----------------------left side jewels------------------- */
+.jewels{
+    /* height:250px; */
+    width:100px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+
+.jewels img{
+    height:100%;
+    width:100%;
+    padding:5px
+}
+
+.j1{
+    height:100px;
+    width:100%;
+    background-color: transparent;
+}
+
+.home .jewels{
+    margin:10px
+}
+.box1{
+    border:1px solid white;
+}
+/* -------------------word1--------------------- */
+.word1{
+    width:80%;
+    /* background-color: aqua; */
+    color:white;
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end; 
+    align-items: end;
+}
+
+.word1 h1{
+    font-size: 40px;
+}
+
+.word1 h3{
+    font-size: 25px;
+}
+
+/* ---------------------------article 1------------------------------- */
+article{
+    min-height:100vh;
+     background-color:rgb(21, 24, 24);
+     /* background-image: url(); */
+}
+article h1{
+    color:grey
+}
+
+article h3{
+    color:grey
+}
+
+
+.word2{
+    display:flex;
+    align-items: center;
+    /* background-color: aquamarine; */
+    gap:20px;
+    padding:20px
+}
+
+.word2 h3{
+    font-size:50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+.info1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:20px
+
+}
+
+.info1>div:first-child{
+    /* background-color: brown; */
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
+
+
+.info1>div:last-child{
+    /* background-color: green; */
+    width:500px;
+     display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
+
+/* ---------------------------info images---------------------- */
+.info1 img{
+    height:350px;
+    width:350px
+}
+
+.info1 h4{
+    color:grey;
+    font-size: 15px;
+}
+/* ---------------------------------main style------------------------- */
+
+main{
+    background-image: url("https://static.toiimg.com/photo/msid-90330861/90330861.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.anibox{
+    min-height:80vh;
+    width:50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom:-130%;
+    right:50px;
+    transition:all 1s;
+    padding:30px 20px 10px
+}
+
+/* --------------------------hover part 1---------------------- */
+main:hover .anibox{ 
+    bottom:0px;
+}
+
+
+/* --------------------------white box styles--------------------------- */
+.anibox>div:first-child{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.anibox>div:last-child{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.jewels{
+    justify-content: flex-start;
+}
+
+.jewels .box{
+    height:75px;
+    width:75px;
+    background-color: aliceblue;
+}
+
+
+.anibox h2{
+    font-size: 30px;
+}
+.anibox p{
+    color:grey;
+    font-size:18px;
+    width:70%;
+}
+
+/* -----------------------------------animation box 2----------------------------- */
+
+.section2{
+    background-image:url("https://cdn.pixabay.com/photo/2018/02/27/03/13/indian-3184578_1280.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.anibox2{
+     min-height:80vh;
+    width:50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom:-130%;
+    left:50px;
+    transition:all 1s;
+    padding:30px 20px 10px
+}
+/* -----------------------------hover part 2---------------------- */
+.section2:hover .anibox2{
+    bottom:0px
+}
+
+
+/* ---------------------------second white box style------------------------ */
+.anibox2>div:first-child{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.anibox2>div:last-child{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+ /* .jewels{
+    justify-content: flex-start;
+} */
+
+.image{
+    height:300px;
+    width:400px
+}
+
+.image img{
+    height:100%;
+    width:100%
+}
+
+.anibox2 h2{
+    font-size: 30px;
+}
+.anibox2 p{
+    color:grey;
+    font-size:18px;
+    width:70%;
+}
+
+/* ----------------------------animation box 3----------------------------- */
+.article2{
+    background-image:url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2f73bb61658493.5a75732e670c8.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.anibox3{
+     min-height:80vh;
+    width:50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom:-130%;
+    right:50px;
+    transition:all 1s;
+    padding:30px 20px 10px
+}
+
+/* ----------------------------third white box style--------------------------- */
+.anibox3>div:first-child{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.anibox3>div:last-child{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* .anibox3 .jewels{
+    justify-content: flex-start;
+} */
+
+.anibox3 h2{
+    font-size: 30px;
+}
+.anibox3 p{
+    color:grey;
+    font-size:18px;
+    width:70%;
+}
+/* -----------------------------hover part 3---------------------- */
+.article2:hover .anibox3{
+    bottom:0px
+}
+
+/* ----------------------------about page===---------------- */
+.types{
+    min-height: 60vh;
+    background-color: rgb(21, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    padding:40px 20px;
+    flex-wrap: wrap;
+}
+
+.types>div:first-child{
+    width:450px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:10px ;
+     color:white;
+}
+
+.types button{
+    padding:20px;
+    background-color: transparent;
+    border-radius: 30px;
+    width: 40%;
+     color:white;
+    border:2px solid white
+}
+
+.types>div:nth-child(2){
+    width:250px;
+     display: flex;
+    flex-direction: column;
+    gap:30px;
+     color:white;
+     padding:20px 0px
+}
+
+.types>div:nth-child(3){
+    width:250px;
+     display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:20px 0px; 
+     color:white;
+}
+
+.types>div:last-child{
+    width:250px;
+     display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:20px 0px;
+     color:white;
+}
+
+
+.types img{
+    height:150px;
+    width:250px;
+    border-radius: 10px;
+}
+
+/* --------------------------------------images ------------------------------ */
+
+.images{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap:20px; */
+    padding:20px
+}
+
+.images>div:first-child{
+    width: 600px;
+    height:400px;
+    display: flex;
+    align-items: center;
+}
+
+.images>div:last-child{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    padding:20px
+}
+
+.images>div:first-child img{
+    height:100%;
+    width:100%
+}
+
+.images p{
+    width:60%;
+    color:grey
+}
+
+/* ---------------------------grid box----------------------------------- */
+
+.gridbox{
+    min-height: 100vh;
+    background-color: white;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    flex-wrap: wrap; */
+}
+
+.grid{
+    min-height:200px;
+     display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.gridbox>h2{
+    padding:30px;
+    text-align: center;
+    margin: 100px 10px 40px;
+}
+/* ----------------------------grid image style----------------------- */
+
+.grid1a{
+    height:250px;
+    width:300px;
+}
+.grid1b{
+    height:250px;
+    width:400px;
+}
+
+.grid2a{
+    height:400px;
+    width:600px;
+}
+
+.grid2b{
+    height:400px;
+    width:400px;
+}
+
+.grid3a{
+    height:250px;
+    width:400px
+}
+
+.grid3b{
+    height:250px;
+    width:300px
+}
+
+.grid img{
+    height:100%;
+    width:100%;
+}
+
+/* -----------------------design------------------------------ */
+
+.design{
+    height:70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.design img{
+    height:180px;
+    width:180px;
+    border-radius: 50%;
+}
+
+.design div{
+    height:300px;
+    width:200px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+    color:white;
+    padding:10px;
+    gap:20px
+}
+
+.design span{
+    height:30px;
+    background-color: white;
+    color:rgb(21, 24, 24);
+    width:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* -----------------------------photo part---------------------- */
+.photo{
+    min-height:100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:30px 20px 10px 
+}
+
+
+.photo1{
+    min-height:90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    align-items: end;
+}
+
+.photo1 img{
+    height:250px;
+    width:150px
+}
+
+.photo1>div{
+    height:400px;
+    width:40%;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:20px
+}
+
+.profile{
+    height:200px;
+    width: 350px;
+}
+
+.profile img{
+    height:100%;
+    width:100%
+}
+/* ----------------------------------contact------------------------ */
+.contact{
+    min-height:100vh;
+}
+
+/* -------------------------contact 1----------------------- */
+.contactA{
+    min-height: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px
+
+}
+
+.contactA>div:first-child{
+    width:900px;
+     display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px;
+    color:white
+}
+
+.contactA h1{
+    font-size: 40px;
+}
+
+.contactA p{
+    font-size: 18px;
+}
+
+.contactA>div:last-child{
+    width:400px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    color:white   
+}
+
+/* ---------------------------contact 2------------------------- */
+
+.contactB{
+    min-height: 200px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:20px
+}
+
+.contactB h3{
+    color:white;
+    text-align: center;
+}
+
+.contactB>div:last-child{
+    min-height:200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactB img{
+    height:200px;
+    width:200px
+}
+
+.contactB>div:last-child div{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+  
+
+/* -------------------------------------media query-------------------------------------- */
+@media only screen  and (max-width:1070px) {
+    .contact .back{
+    height:160vh;
+    }
+    .tags{
+        font-size: 14px;
+    }
+     
+}
+
+@media only screen and (min-width:300px) and (max-width:650px) {
+    .info1 img{
+        height:250px;
+        width:250px;
+    } 
+
+    .word1 h1{
+        font-size: 30px;
+    }
+    .word1 h3{
+        font-size: 20px;
+    }
+    .tags{
+        height:80vh;
+        width:90%;
+        background-color: #71717173;;
+        border-radius: 10px;
+        left:-100%;
+        top:80px;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .photo1>div{
+        width:100%
+    }
+    .profile{
+        width:250px
+    }
+
+    .fa-bars{
+    display: block;
+    }
+    nav button{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .logo img {
+        height:100px;
+        width:100px
+    }
+
+    .word2 h3{
+        font-size: 30px;
+    }  
+    .word2 h1{
+        font-size:20px ;
+    }
+    .image{
+        padding:0px
+    }
+    .jewels .box{
+        height:50px;
+        width:50px
+    }
+    .anibox>div:last-child{
+        padding:0px
+    }
+    .anibox2>div:last-child{
+        padding:0px
+    }
+    .anibox3>div:last-child{
+        padding:0px
+    }
+    .anibox,.anibox2,.anibox3{
+        width:80%;
+    }
+    .anibox p{
+        font-size: 12px;
+        width:100%;
+    }
+    .anibox2 p{
+        font-size: 12px;
+        width:100%;
+    }
+    .anibox3 p{
+        font-size: 12px;
+        width:100%;
+    }
+    .contact .back{
+    height:220vh;
+    }
+    .types button{
+        width:50%
+    }
+
+}
+
+
+@media only screen and (min-width:650px) and (max-width:950px) {
+    .profile{
+        width:300px
+    }
+
+    .photo1>div{
+        width:60%
+    }
+    
+    .anibox p{
+        font-size: 18px;
+        width:100%;
+    }
+    .anibox2 p{
+        font-size: 18px;
+        width:100%;
+    }
+    .anibox3 p{
+        font-size: 18px;
+        width:100%;
+    }
+     .anibox h2{
+        font-size: 20px;
+      
+    }
+    .anibox2 h2{
+        font-size: 20px;
+      
+    }
+    .anibox3 h2{
+        font-size: 20px;
+      
+    }
+    .anibox,.anibox2,.anibox3{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:450px) {
+    .contact .back{
+    height:320vh;
+    }
+    .j1{
+        height:80px;
+        width:80%
+    }
+}
