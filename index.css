@@ -56,6 +56,14 @@ nav input{
     display: none;
 }
 
+a{
+    text-decoration: none;
+    color:white
+}
+
+button a{
+    color:black
+}
 /* ------------------home--------------------------- */
 .home{
     min-height:100vh;
