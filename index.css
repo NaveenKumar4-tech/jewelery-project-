@@ -3,18 +3,23 @@
     box-sizing: border-box;
     padding: 0px;
     font-family:sans-serif,Arial, Helvetica;
+    scroll-behavior: smooth;
 }
 
 /* -=--------------overall container------------------------- */
 
 /* -------------------------nav bar--------------------- */
 nav{
-    height:100px;
+    height:75px;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px
+    padding: 0px 10px;
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index: 999;
 }
 
 .logo img{
@@ -28,7 +33,7 @@ nav{
     /* background-color: darkgreen; */
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     color:white;
     transition: all 1s;
     gap:20px;
@@ -64,17 +69,26 @@ a{
 button a{
     color:black
 }
+
+.fa-xmark{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:white;
+    display: none;
+}
+
 /* ------------------home--------------------------- */
 .home{
     min-height:100vh;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
+    padding-top: 75px;
+    position: relative
 }
 
 .back{
     object-fit: cover;
-    height:100vh;
+    height:100%;
     position: absolute;
     filter: brightness(50%);
     width: 100%;
@@ -671,6 +685,7 @@ main{
 /* ----------------------------------contact------------------------ */
 .contact{
     min-height:100vh;
+    position: relative;
 }
 
 /* -------------------------contact 1----------------------- */
@@ -744,9 +759,7 @@ main{
 
 /* -------------------------------------media query-------------------------------------- */
 @media only screen  and (max-width:1070px) {
-    .contact .back{
-    height:160vh;
-    }
+    
     .tags{
         font-size: 14px;
     }
@@ -785,6 +798,9 @@ main{
         width:250px
     }
 
+    .fa-xmark{
+        display: block;
+    }
     .fa-bars{
     display: block;
     }
@@ -821,11 +837,18 @@ main{
         padding:0px
     }
     .anibox,.anibox2,.anibox3{
-        width:80%;
+        width:85%;
+        min-height: 90vh;
     }
     .anibox p{
         font-size: 12px;
         width:100%;
+    }
+    .anibox,.anibox3{
+        right:40px
+    }
+    .anibox2{
+        left:40px
     }
     .anibox2 p{
         font-size: 12px;
@@ -835,11 +858,11 @@ main{
         font-size: 12px;
         width:100%;
     }
-    .contact .back{
-    height:220vh;
-    }
     .types button{
         width:50%
+    }
+    .anibox h2,.anibox2 h2,.anibox3 h2{
+        font-size:25px;
     }
 
 }
@@ -884,9 +907,6 @@ main{
 }
 
 @media only screen and (min-width:300px) and (max-width:450px) {
-    .contact .back{
-    height:320vh;
-    }
     .j1{
         height:80px;
         width:80%
